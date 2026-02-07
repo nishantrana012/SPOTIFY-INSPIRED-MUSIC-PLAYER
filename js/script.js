@@ -20,7 +20,7 @@ function togglePlayPause() {
 }
 
 const playMusic = (track, pause = false) => {
-    currSong.src = `/songs/${currFolder}/` + track
+    currSong.src = `/SPOTIFY-INSPIRED-MUSIC-PLAYER/songs/${currFolder}/` + track
     if (!pause) {
         currSong.play()
         play.src = "img/pause.svg"
@@ -37,7 +37,7 @@ const playMusic = (track, pause = false) => {
 
 async function getSongs(currFolder) {
     currFolder = currFolder.replaceAll(" ", "%20")
-    let a = await fetch(`/songs/${currFolder}/`)
+    let a = await fetch(`/SPOTIFY-INSPIRED-MUSIC-PLAYER/songs/${currFolder}/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -82,7 +82,7 @@ async function getSongs(currFolder) {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`/SPOTIFY-INSPIRED-MUSIC-PLAYER/songs/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -90,7 +90,7 @@ async function displayAlbums() {
     let c = 1
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
-        if (element.href.includes("/songs/") && !e.href.includes(".htaccess")) {
+        if (element.href.includes("/songs/") && !element.href.includes(".htaccess")) {
             if (c==1) {
                 currFolder = element.href.split("/songs/")[1]
                 c = 0
