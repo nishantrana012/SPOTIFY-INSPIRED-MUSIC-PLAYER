@@ -3,10 +3,6 @@ Markdown
 
 A responsive, web-based music player interface inspired by Spotify's design. This project demonstrates front-end development skills using vanilla web technologies to create a functional audio playback experience.
 
-## 🚀 Live Demo
-
-**[View the Live Site Here](https://your-username.github.io/your-repo-name)**
-
 ## ✨ Features
 
 * **Playback Controls:** Play, pause, next, and previous functionality.
@@ -33,7 +29,7 @@ A responsive, web-based music player interface inspired by Spotify's design. Thi
 ## 📂 How to Run
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/nishantrana012/Netflix-Clone-Using-HTML-CSS.git
+    git clone https://github.com/nishantrana012/SPOTIFY-INSPIRED-MUSIC-PLAYER.git
     ```
 2.  Navigate to the project folder.
 3.  Open `index.html` in your browser.
